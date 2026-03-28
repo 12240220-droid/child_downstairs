@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小朋友下樓梯 - 網頁版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="hp-bar-container">
+                <div id="hp-bar"></div>
+            </div>
+            <div id="score">層數: 0</div>
+        </div>
+        <div id="menu" class="overlay">
+            <h1>小朋友下樓梯</h1>
+            <p>使用左右方向鍵控制</p>
+            <button id="start-btn">開始遊戲</button>
+        </div>
+        <div id="game-over" class="overlay hidden">
+            <h1>遊戲結束</h1>
+            <p id="final-score">最終層數: 0</p>
+            <button id="restart-btn">重新開始</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
